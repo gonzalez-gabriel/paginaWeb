@@ -74,14 +74,14 @@ article{
     width: 75%;
 }
 
-@media only screen and (min-width: 768px){
+/* @media only screen and (min-width: 768px){
     main{
         display:flex;
     }
     aside{
         margin-left: 2%;
     }
-}
+} */
 
 .logo{
     max-width: 100%;
@@ -110,6 +110,9 @@ h1{
     font-weight: bold;
 }
 /* CATALOGO -----------------------------------------------------------------*/
+article{
+    display: flex;
+}
 
 .element{
     max-width: 15em;
@@ -170,7 +173,7 @@ h1{
   background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
 }
 button:hover{/*pseudo clase, cuando le pongo el mouse encima pasa algo*/
-    color: red;
+    color: rgb(207, 200, 200);
 }
 
 
