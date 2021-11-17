@@ -1,51 +1,18 @@
 /*jerarquia en css de menor a mayor: elementos --- clases,atributos,pseudoclases --- id --- estilo en linea --- !important*/
-*{
-    margin:0;
-    padding:0;
-}
 
-html{
-    height:75%; /*Consultar*/
-}
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgray;
-}
+
+
+
 .banner{
     max-width: 100%;
     border: solid 0.3em white;
     border-radius: 1.5%;
 }
 
-header{
-    display:block;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background-color:lightgoldenrodyellow;
-    padding: 10px;
-}
-
-nav a:visited,
-nav a:link,
-.subtitle > a{
-    color:black;
-    text-decoration:none;
-}
 
 
-nav > ul{
-    display: inline;
-    padding:0;
-}
 
-nav>ul>li{
-    display:inline-block;
-    list-style: none;
-    margin:0 5px 0 5px;
-}
 
 main{
     display: block;
@@ -57,44 +24,15 @@ main{
     max-height: 100%;
 }
 
-footer{
-    padding:15px;
-    
-}
 
-aside,article{
-    padding:2em;
-}
 
-aside{
-    text-align: center;
-}
 
-article{
-    width: 75%;
-}
 
-/* @media only screen and (min-width: 768px){
-    main{
-        display:flex;
-    }
-    aside{
-        margin-left: 2%;
-    }
-} */
 
-.logo{
-    max-width: 100%;
-    max-height: 100%;
-    border: solid 1em black;
-    border-radius: 50%;
-}
 
-h1{
-    font-size: 3em;
-    margin-top: 0.5em;
-    color: white;
-}
+
+
+
 
 .subtitle{
     background-color: rgb(97, 94, 94);
@@ -109,71 +47,6 @@ h1{
 .catalogo1{
     font-weight: bold;
 }
-/* CATALOGO -----------------------------------------------------------------*/
-article{
-    display: flex;
-}
 
-.element{
-    max-width: 15em;
-    width: 20%;
-    padding: 10px;
-    margin: 10px;
-    background-color:rgb(75, 58, 82);
-    border: solid 1px;
-    border-radius: 5%;
-    box-shadow: 10px 10px 10px 10px;
-  
-    
-}
-
-.image-jinx{
-    height: 10em; 
-    width: 100%; 
-    
-}
-/* .image-jinx{
-    max-width: 100%;
-    border: solid 0.3em white;
-    border-radius: 1.5%;
-} */
-
-
-.element-information{
-    display: flex;
-    max-width: 100%;
-    justify-content: space-between;
-    margin-bottom: 0.2em;
-}
-
-
-.element-information .title{
-    font-weight: bold;
-}
-
-.element-information .price{
-    text-align: right;
-    /* border: solid 2px white; */
-}
-
-.element button{
-    background-color: red;
-    padding: 10px;
-    border: solid 1px;
-    border-radius:3px;
-    margin-top: 0.5em;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
-    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
-}
-button:hover{/*pseudo clase, cuando le pongo el mouse encima pasa algo*/
-    color: rgb(207, 200, 200);
-}
 
 

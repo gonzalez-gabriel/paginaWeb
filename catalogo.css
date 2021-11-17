@@ -1,0 +1,61 @@
+.element{
+    max-width: 15em;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    background-color:rgb(75, 58, 82);
+    border: solid 1px;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px 10px;
+  
+    
+}
+
+.image-jinx{
+    height: 10em; 
+    width: 100%; 
+    
+}
+/* .image-jinx{
+    max-width: 100%;
+    border: solid 0.3em white;
+    border-radius: 1.5%;
+} */
+
+
+.element-information{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0.2em;
+}
+
+
+.element-information .title{
+    font-weight: bold;
+}
+
+.element-information .price{
+    text-align: right;
+    /* border: solid 2px white; */
+}
+
+.element button{
+    background-color: red;
+    padding: 10px;
+    border: solid 1px;
+    border-radius:3px;
+    margin-top: 0.5em;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+}
+button:hover{/*pseudo clase, cuando le pongo el mouse encima pasa algo*/
+    color: rgb(207, 200, 200);
+}
