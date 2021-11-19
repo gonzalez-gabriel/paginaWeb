@@ -13,9 +13,19 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li>
+                    <a class="inicio" href="/">Inicio</a>
+                    <div id="mov1" class="mov"></div>
+                </li>
+                <li>
+                    <a class="catalogo" href="catalogo.html">Catálogo</a>
+                    <div id="mov2" class="mov"></div>
+                </li>
+                <li>
+                    <a class="contacto" href="contact.html">Contacto</a>
+                    <div id="mov3" class="mov"></div>
+                </li>
+                <!-- para q el hover hermano funcione, a quien quiero mover tiene q posicionarse despues -->                
             </ul>
         </nav>
     </header>
@@ -29,13 +39,23 @@
         </article>
     </main>
     <footer>
-        <nav>
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div>
+            <p>
+            Hecho con 
+            <img class="font" src="images/heart.svg" alt=""> y 
+            <img class="font" src="images/coffe.svg" alt=""> en 
+            <a href="https://www.google.com/maps/place/Block+3+-+Decanato+-+Facultad+de+Ciencias+Exactas+y+Tecnolog%C3%ADa+de+la+U.N.T./@-26.8433893,-65.2309149,17z/data=!3m1!4b1!4m5!3m4!1s0x94225c799ae43cd7:0x953da00896cdc8f1!8m2!3d-26.8433941!4d-65.2287262">San Miguel de Tucumán</a>
+            , Tucumán, Argentina.
+            </p>
+            <div class="redes">
+            
+            
+                <a class="twitter" href="/"><img src="images/twitter.svg" alt=""></a>
+                <a class="facebook" href="catalogo.html"><img src="images/facebook.svg" alt=""></a>
+                <a class="instagram" href="contact.html"><img src="images/ig.svg" alt=""></a>
+            
+            </div>
+        </div>
     </footer>
 </body>
 </html>

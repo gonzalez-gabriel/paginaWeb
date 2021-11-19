@@ -1,5 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:900&display=swap");
 html{
     height:75%; /*Consultar*/
+}
+nav{
+    padding-top:0.4em;
+    /* position:absolute; */
+}
+
+#mov1{
+    width:3.7em;
+    left:3.2em;
+}
+#mov2{
+    width:5.7em;
+    left:9.9em;
+}
+#mov3{
+    width:5.77em;
+    left:18.7em;
+}
+.mov{
+    position:absolute;
+    height:0.3em;
+    background:white;
+    bottom:0.5em;
+    pointer-events: none;
+    transition: all 1s ease;
+    width:3.7em;
+    left:3.2em;
 }
 
 body{
@@ -13,17 +41,45 @@ header{
     top:0;
     left:0;
     width:100%;
-    background-color:lightgoldenrodyellow;
+    background-color:black;
     padding: 10px;
+    border-bottom: double 0.3em white;
+    height:2em;
 }
+
 
 nav a:visited,
-nav a:link,
-.subtitle > a{
-    color:black;
+nav a:link{
+    font-family: "Catamaran", sans-serif;
+    font-size: 1.2em;
+    color: black;
+    transition: all 1s ease;
+    text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
     text-decoration:none;
+    letter-spacing:0.05em;
+    margin-left: 2em;
 }
 
+.inicio:hover{
+    color: white;
+}
+.inicio:hover ~ #mov1{
+    transform: translateY(-1.8em);
+}
+
+.catalogo:hover{
+    color: white;
+}
+.catalogo:hover ~ #mov2{
+    transform: translateY(-1.8em);
+}
+
+.contacto:hover{
+    color: white;
+}
+.contacto:hover ~ #mov3{
+    transform: translateY(-1.8em);
+}
 
 nav > ul{
     display: inline;
@@ -63,14 +119,14 @@ article{
     width: 75%;
 }
 
-@media only screen and (min-width: 768px){
+/* @media only screen and (min-width: 768px){
     main{
         display:flex;
     }
     aside{
         margin-left: 2%;
     }
-}
+} */
 
 h1{
     font-size: 3em;
@@ -85,3 +141,56 @@ h1{
     border-radius: 50%;
 }
 
+
+
+footer > div{
+    /* display: inline-block; */
+    position: relative;
+    width: 40em;
+    height:2em;
+    top: 0.5em;
+    right:0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+    
+}
+footer > div > p{
+    display: inline-block;
+    /* left:10em; */
+}
+
+.redes{
+    display: inline-block;
+    position: absolute;
+    width:10em;
+    height:1.5em;
+    right: 0.5em;
+}
+footer > div > div > a{
+    position: absolute;
+    height: 1.8em;
+    width: 1.8em;
+    /* left: 0; */
+}
+.twitter{
+    left: 3em;
+    
+}
+.facebook{
+    left: 6em;
+    
+}
+
+.instagram{
+    left: 9em;
+    
+}
+
+
+.font{
+    height:1em;
+    width:1em;
+}
