@@ -1,0 +1,9 @@
+main{
+    display: flex;
+    background-image: url(images/fondoSa.jpg);
+    background-size: cover; /* CUBRE TODA LA PANTALLA (TODO EL VIEWPORT)*/
+    padding-top: 2em;
+    padding-bottom: 2em;
+    min-height: 85%;
+    max-height: 100%;
+}

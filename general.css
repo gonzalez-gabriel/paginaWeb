@@ -2,6 +2,24 @@
 html{
     height:75%; /*Consultar*/
 }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+header{
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:black;
+    padding: 10px;
+    border-bottom: double 0.3em white;
+    height:2em;
+    z-index: 1000;
+}
 nav{
     padding-top:0.4em;
     /* position:absolute; */
@@ -30,12 +48,12 @@ nav{
     left:3.2em;
 }
 
-body{
+/* body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
-}
+} */
 
-header{
+/* header{
     display:block;
     position:fixed;
     top:0;
@@ -45,7 +63,7 @@ header{
     padding: 10px;
     border-bottom: double 0.3em white;
     height:2em;
-}
+} */
 
 
 nav a:visited,
@@ -92,22 +110,51 @@ nav>ul>li{
     margin:0 5px 0 5px;
 }
 
-main{
+/* main{
     display: block;
     background-image: url(images/fondoSa.jpg);
-    background-size: cover; /* CUBRE TODA LA PANTALLA (TODO EL VIEWPORT)*/
+    background-size: cover; CUBRE TODA LA PANTALLA (TODO EL VIEWPORT)
     padding-top: 2em;
     padding-bottom: 2em;
     min-height: 85%;
     max-height: 100%;
+} */
+
+aside,article{
+    padding:2em;
 }
 
-footer{
-    padding:15px;
+aside{
+    display: inline-block;
+    text-align: center;
+    height:100vh;
+}
+aside + h1{
+    display: inline-block;
+    text-align: center;
+}
+h1 + article{
+    display: flex;
     
 }
 
-aside,article{
+article{
+    width: 75%;
+}
+
+h1{
+    font-size: 3em;
+    margin-top: 0.5em;
+    color: white;
+}
+
+
+/* footer{
+    padding:15px;
+    
+} */
+
+/* aside,article{
     padding:2em;
 }
 
@@ -117,7 +164,7 @@ aside{
 
 article{
     width: 75%;
-}
+} */
 
 /* @media only screen and (min-width: 768px){
     main{
@@ -128,20 +175,23 @@ article{
     }
 } */
 
-h1{
+/* h1{
     font-size: 3em;
     margin-top: 0.5em;
     color: white;
-}
+} */
 
-.logo{
+/* .logo{
     max-width: 100%;
     max-height: 100%;
     border: solid 1em black;
     border-radius: 50%;
+} */
+
+footer{
+    padding:15px;
+    
 }
-
-
 
 footer > div{
     /* display: inline-block; */

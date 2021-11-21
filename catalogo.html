@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Pagina web de Gabi</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="catalogo.css">
     <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="catalogo.css">
 </head>
 <body>
     <header>
@@ -30,14 +30,14 @@
         </nav>
     </header>
     <main>
-        <aside><img class="logo" src="images/logo.png" alt="logo"></aside>
-        <h1>Catálogo</h1>
-        <article>
-           
-            
-                <div class="element">
-                    <img class ="image-jinx" src="images/jinx.jpg" alt="jinx">
-                    <div class="element-information">
+        <div id="logue"><img class="logo" src="images/logoProyecto.jpg" alt="logo"></div>
+        <div id="principal">
+            <div id="titulo"><h1 class="h1">Catálogo</h1></div>
+
+            <div id="article">                
+                <div class="card">
+                    <div class="img-container"><img class ="card-image" src="images/jinx.jpg" alt="jinx"></div>
+                    <div class="card-information">
                         <div class="title">
                             Jinx
                         </div>
@@ -52,9 +52,26 @@
                         Agrega al carrito
                     </button>
                 </div>
-                <div class="element">
-                    <img class ="image-jinx" src="images/braum.jpg" alt="jinx">
-                    <div class="element-information">
+                <div class="card">
+                    <div class="img-container"><img class ="card-image" src="images/draven.webp" alt="jinx"></div>
+                    <div class="card-information">
+                        <div class="title">
+                            Draven
+                        </div>
+                        <div class="price">
+                            $250
+                        </div>
+                    </div>
+                    <p>
+                        Draaaaveeen!
+                    </p>
+                    <button data-order="braum.jpg">
+                        Agrega al carrito
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="img-container"><img class ="card-image" src="images/zed.webp" alt="jinx"></div>
+                    <div class="card-information">
                         <div class="title">
                             LLegó el bigoteeee!
                         </div>
@@ -63,14 +80,16 @@
                         </div>
                     </div>
                     <p>
-                        Tu destructora preferida
+                        Tu ninja de las sombras favorito
                     </p>
                     <button data-order="braum.jpg">
                         Agrega al carrito
                     </button>
                 </div>
+                
             
-        </article>
+            </div>
+        </div>
     </main>
     <footer>
         <div>
