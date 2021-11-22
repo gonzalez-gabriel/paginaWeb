@@ -7,3 +7,149 @@ main{
     min-height: 85%;
     max-height: 100%;
 }
+
+.logo{
+    margin-left: 1em;
+    flex:2;
+}
+
+.logo img{
+    margin-top:5em;
+    width:15em;
+    border: outset 0.6em rgb(243, 30, 30);
+    border-radius: 50%;
+    box-sizing: border-box;   
+}
+
+.principal{
+    flex:8;
+}
+
+.principal > h1{
+    margin-top:2em;
+    text-align: center;
+    font-family: "Catamaran", sans-serif;
+    text-shadow: 3px 0 0 rgb(180,74,58), 0 -3px 0 rgb(180,74,58), 0 3px 0 rgb(180,74,58), -3px 0 0 rgb(180,74,58);
+
+}
+
+.content{
+    display: flex;
+}
+
+.order-selected{
+    flex:4;
+}
+form{
+    flex:6;
+    /* background-color: red; */
+}
+
+.card{
+    margin-left: 2em;
+    padding: 1em 0.5em;
+    height:inherit;
+    width: 23em;
+    background: rgb(242,31,17);
+    background: linear-gradient(0deg, rgba(242,31,17,1) 0%, rgba(46,5,13,1) 100%);
+    border-radius: 2em;
+}
+
+.image-container{
+    margin-left: auto;
+    margin-right: auto;
+    border: outset 3px red;
+    border-radius:2em;
+    width:22em;
+    height:20em;
+    overflow: hidden;
+    background:white;
+
+    /* box-sizing: border-box; */
+}
+.image-container > img{
+    display:block;
+    height:inherit;
+    margin:auto;
+}
+
+.element-information{
+    display:flex;
+    margin-top: 1em;
+}
+.element-information .title, .element-information .price{
+    color: white;
+    font-weight:900;
+    font-size:1.2em;
+}
+.price{
+    flex:1;
+    text-align:center;
+}
+.title{
+    flex: 1;
+    text-align: center;
+}
+
+
+.form-container{
+    border: inset 4px grey;
+    width:24em;
+    margin: 0 auto;
+    border-radius: 2em;
+    background: rgb(112,124,124);
+    background: linear-gradient(0deg, rgba(112,124,124,1) 0%, rgba(253,58,45,1) 100%);
+    box-shadow: 5px 5px 10px 5px black;
+}
+.form-container h2, .form-container h5{
+    text-align:center;
+    font-family: "Catamaran", sans-serif;
+    color: white;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+
+.input-group{
+    display: block;
+    width:100%;
+    margin: auto;
+}
+input{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 0.4em;
+}
+label{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: "Catamaran", sans-serif;
+    text-shadow: 2px 0 0 #fff, 0 -2px 0 #fff, 0 2px 0 #fff, -2px 0 0 #fff;
+    margin-bottom: 0.2em;
+}
+
+
+.send{
+    display: flex;
+    margin-top:2em;
+    width:100%;
+    margin: 2em auto;
+}
+
+.send input{
+    display: block;
+    margin: auto;
+    width: 6em;
+    height:3em;
+    border-radius: 2em;
+    background: rgb(102,51,51);
+    background: linear-gradient(0deg, rgba(102,51,51,1) 0%, rgba(255,16,0,1) 88%);
+    transition: 0.5s;
+}
+.send input:hover{
+    transform: scale(1.1);
+    background: rgb(255,16,0);
+    background: linear-gradient(0deg, rgba(255,16,0,1) 0%, rgba(102,51,51,1) 88%);
+    color: white;
+    box-shadow: 1px 1px 1px 1px white;
+}

@@ -102,7 +102,7 @@ h3{
     width: 40%;
     height:12em;
     border-radius: 2em;
-    
+    box-shadow: 2px 2px 2px 2px;
 }
 .box p{
     font-family: arial;
@@ -136,7 +136,7 @@ h3{
     padding-right: 3em;
 }
 #address h4{
-    padding-top: 2em; ;
+    padding-top: 2em;
 }
 #tel h4{
     padding-top: 2.5em;
@@ -145,6 +145,12 @@ h3{
     padding-top: 1em;
 }
 
+#time h4{
+    padding-top:1em;
+}
+#time h5{
+    font-size:0.9em;
+}
 
 #content  a:visited, #content a:link{
     text-decoration:none;
