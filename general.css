@@ -20,6 +20,7 @@ header{
     height:2em;
     z-index: 1000;
 }
+
 nav{
     padding-top:0.4em;
     /* position:absolute; */
@@ -225,7 +226,7 @@ footer > div > div > a{
     width: 1.8em;
     /* left: 0; */
 }
-.twitter{
+.github{
     left: 3em;
     
 }

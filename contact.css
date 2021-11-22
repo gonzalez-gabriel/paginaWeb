@@ -1,5 +1,5 @@
 main{
-    display: flex;
+    display: block;
     background-image: url(images/fondoSa.jpg);
     background-size: cover; /* CUBRE TODA LA PANTALLA (TODO EL VIEWPORT)*/
     padding-top: 2em;
@@ -7,3 +7,152 @@ main{
     min-height: 85%;
     max-height: 100%;
 }
+
+#top{
+    display:flex;
+    /* background:orange; */
+    /* width: 100vw;
+    margin: auto; */
+    background: rgb(180,74,58);
+background: linear-gradient(45deg, rgba(180,74,58,1) 0%, rgba(50,43,43,1) 50%, rgba(235,201,201,1) 100%);
+border-radius: 4%;
+padding-bottom:1em;
+}
+
+.logo{
+    flex:2;
+    margin-top:5em;
+    margin-left: 1em;
+    height:10em;
+    border: outset 0.6em rgb(243, 30, 30);
+    border-radius: 50%;
+    box-sizing: border-box;   
+    max-width: 15em;;
+}
+.mid{
+    flex:6;
+}
+.mid>h2{
+    font-family: "Catamaran", sans-serif;
+    color:rgb(180,74,58);
+    text-align:center;
+    margin-top:3em;
+    font-size: 2em;
+    text-shadow: 2px 0 0 #fff, 0 -2px 0 #fff, 0 2px 0 #fff, -2px 0 0 #fff;
+}
+.mid>h1{
+    font-family: "Catamaran", sans-serif;
+    color:white;
+    text-align:center;
+    text-shadow: 3px 0 0 rgb(180,74,58), 0 -3px 0 rgb(180,74,58), 0 3px 0 rgb(180,74,58), -3px 0 0 rgb(180,74,58);
+}
+
+.right{
+    flex:2;
+}
+.right>img{
+    margin-top:3em;
+}
+
+#title{
+    padding-top: 1em;
+    /* background: red; */
+    width: 80em;
+    margin: auto;
+}
+h3{
+    letter-spacing:0.05em;
+    font-size: 2em;
+    font-family: "Catamaran", sans-serif;
+    text-align:center;
+    color: white;
+    text-shadow: 3px 0 0 rgb(180,74,58), 0 -3px 0 rgb(180,74,58), 0 3px 0 rgb(180,74,58), -3px 0 0 rgb(180,74,58);
+
+}
+
+#content{
+    position: relative;
+    /* background:blue; */
+    height: 25em;
+    margin: auto;
+    /* max-width:100em; */
+    width: 80em;
+    max-width:100em;
+}
+
+#time{
+    left: 7em;
+}
+#address{
+    right:7em;
+}
+#tel{
+    bottom: 0;
+    left: 7em;
+}
+#mail{
+    bottom: 0;
+    right: 7em;
+}
+.box{
+    background: rgb(199,82,92);
+    background: radial-gradient(circle, rgba(199,82,92,1) 0%, rgba(237,130,140,1) 50%, rgba(131,106,108,1) 86%);
+    display:flex;
+    position: absolute;
+    width: 40%;
+    height:12em;
+    border-radius: 2em;
+    
+}
+.box p{
+    font-family: arial;
+    
+}
+.picture{
+    position: relative;
+    flex:2;
+    margin:auto;
+    height:10em;
+    width:100%;
+}
+
+.picture > img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width:5em;
+    height:5em;
+
+}
+
+.information{
+    flex:5;
+}
+
+#content p{
+    padding-right: 3em;
+}
+#address h4{
+    padding-top: 2em; ;
+}
+#tel h4{
+    padding-top: 2.5em;
+}
+#mail h4{
+    padding-top: 1em;
+}
+
+
+#content  a:visited, #content a:link{
+    text-decoration:none;
+    color:blue;
+    font-weight: bold;
+}
+/* .hola{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+} */
+

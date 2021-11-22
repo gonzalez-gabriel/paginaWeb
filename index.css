@@ -8,7 +8,11 @@ main{
     min-height: 85%;
     max-height: 100%;
 }
-
+.slave >h1{
+    font-family: "Catamaran", sans-serif;
+    text-shadow: 3px 0 0 rgb(180,74,58), 0 -3px 0 rgb(180,74,58), 0 3px 0 rgb(180,74,58), -3px 0 0 rgb(180,74,58);
+    text-align: center;
+}
 .subtitle{
     background-color: rgb(97, 94, 94);
     font-size: 1.5em;

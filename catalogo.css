@@ -7,7 +7,7 @@ main{
     min-height: 85%;
     max-height: 100%;
 }
-#logue{ 
+#logotipe{ 
     margin-left: 1em; 
     flex: 2;
     height:inherit;
@@ -23,9 +23,34 @@ main{
     width:15em;
     border: outset 0.6em rgb(243, 30, 30);
     border-radius: 50%;
-    box-sizing: border-box;
+    box-sizing: border-box;   
+}
+
+.filter{
+    display: table;
+    background: rgb(51,28,29);
+background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, rgba(32,29,29,1) 27%);
+    /* transition: 1s; */
+    height: 15vh;
+    width:100%;
+    text-align: center;
+    border-bottom: 1px red solid;
+    border-radius: 1em;
     
+}
+.filter:hover{
+    background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, rgba(32,29,29,1) 79%);
     
+}
+
+.filter-mid{
+    display: table-cell;
+   vertical-align: middle;
+   pointer-events: none;
+   font-family: "Catamaran", sans-serif;
+    font-size: 1.2em;
+    color: black;
+    text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
 }
 /* #article{
     width:2em;
@@ -35,7 +60,11 @@ main{
     margin-right: 10em;
 } */
 
+
 #titulo{
+    font-family: "Catamaran", sans-serif;
+    text-shadow: 3px 0 0 rgb(180,74,58), 0 -3px 0 rgb(180,74,58), 0 3px 0 rgb(180,74,58), -3px 0 0 rgb(180,74,58);
+
     margin-top:5em;
     text-align: center;
 }
@@ -150,7 +179,7 @@ main{
     /* border: solid 2px white; */
 }
 
-p{
+.description{
     position: relative;
     color: white;
     text-align: center;
@@ -162,18 +191,15 @@ p{
     background-color: red;
     padding: 10px;
     border: solid 1px;
-    border-radius:3px;
+    border-radius:3em;
     margin-top: 0.5em;
     display:block;
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
-    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
 }
 button:hover{/*pseudo clase, cuando le pongo el mouse encima pasa algo*/
     color: rgb(207, 200, 200);
+    background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
 }
