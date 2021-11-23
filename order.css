@@ -1,7 +1,7 @@
 main{
     display: flex;
     background-image: url(images/fondoSa.jpg);
-    background-size: cover; /* CUBRE TODA LA PANTALLA (TODO EL VIEWPORT)*/
+    background-size: cover; 
     padding-top: 2em;
     padding-bottom: 2em;
     min-height: 85%;
@@ -21,16 +21,15 @@ main{
     box-sizing: border-box;   
 }
 
-.principal{
+.main{
     flex:8;
 }
 
-.principal > h1{
+.main > h1{
     margin-top:2em;
     text-align: center;
     font-family: "Catamaran", sans-serif;
     text-shadow: 3px 0 0 rgb(180,74,58), 0 -3px 0 rgb(180,74,58), 0 3px 0 rgb(180,74,58), -3px 0 0 rgb(180,74,58);
-
 }
 
 .content{
@@ -40,9 +39,9 @@ main{
 .order-selected{
     flex:4;
 }
+
 form{
     flex:6;
-    /* background-color: red; */
 }
 
 .card{
@@ -64,8 +63,6 @@ form{
     height:20em;
     overflow: hidden;
     background:white;
-
-    /* box-sizing: border-box; */
 }
 .image-container > img{
     display:block;
@@ -113,12 +110,14 @@ form{
     width:100%;
     margin: auto;
 }
+
 input{
     display: block;
     margin: auto;
     text-align: center;
     margin-bottom: 0.4em;
 }
+
 label{
     display: block;
     margin: auto;
@@ -146,6 +145,7 @@ label{
     background: linear-gradient(0deg, rgba(102,51,51,1) 0%, rgba(255,16,0,1) 88%);
     transition: 0.5s;
 }
+
 .send input:hover{
     transform: scale(1.1);
     background: rgb(255,16,0);

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Pagina web de Gabi</title>
+		<title>Proyecto Colección</title>
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="general.css" />
 		<link rel="stylesheet" href="order.css" />
@@ -14,18 +14,17 @@
 			<nav>
 				<ul>
 					<li>
-						<a class="inicio" href="/">Inicio</a>
+						<a class="index" href="/">Inicio</a>
 						<div id="mov1" class="mov"></div>
 					</li>
 					<li>
-						<a class="catalogo" href="catalogo.html">Catálogo</a>
+						<a class="catalog" href="catalogo.html">Catálogo</a>
 						<div id="mov2" class="mov"></div>
 					</li>
 					<li>
-						<a class="contacto" href="contact.html">Contacto</a>
+						<a class="contact" href="contact.html">Contacto</a>
 						<div id="mov3" class="mov"></div>
 					</li>
-					<!-- para q el hover hermano funcione, a quien quiero mover tiene q posicionarse despues -->
 				</ul>
 			</nav>
 		</header>
@@ -33,7 +32,7 @@
 			<div class="logo">
 				<img src="images/logoProyecto.jpg" alt="logo" />
 			</div>
-			<div class="principal">
+			<div class="main">
 				<h1>ORDEN</h1>
 				<div class="content">
 					<div class="order-selected">
@@ -183,9 +182,9 @@
 					>
 					, Tucumán, Argentina.
 				</p>
-				<div class="redes">
+				<div class="networks">
 					<a class="github" href="https://github.com/gonzalez-gabriel"
-						><img src="images/twitter.svg" alt=""
+						><img src="images/github.svg" alt=""
 					/></a>
 					<a
 						class="facebook"
@@ -205,14 +204,14 @@
 		window.addEventListener("DOMContentLoaded", () => {
 			const order = localStorage.getItem("order");
 			if (order) {
-				const catalogOrder = JSON.parse(order); //JSON.parse me desestringuea el objeto order (paso inverso)
+				const catalogOrder = JSON.parse(order); 
 				const orderSelected = document.querySelector(".order-selected");
 				orderSelected.querySelector(".title").innerText =
 					catalogOrder.title;
 				orderSelected.querySelector(".price").innerText =
 					catalogOrder.price;
 				const img = orderSelected.querySelector("img");
-				img.setAttribute("src", `images/${catalogOrder.gabriel}`);
+				img.setAttribute("src", `images/${catalogOrder.id}`);
 			}
 		});
 	</script>

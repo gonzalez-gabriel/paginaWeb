@@ -1,23 +1,23 @@
 main{
     display: flex;
     background-image: url(images/fondoSa.jpg);
-    background-size: cover; /* CUBRE TODA LA PANTALLA (TODO EL VIEWPORT)*/
+    background-size: cover; 
     padding-top: 2em;
     padding-bottom: 2em;
     min-height: 85%;
     max-height: 100%;
 }
+
 #logotipe{ 
     margin-left: 1em; 
     flex: 2;
     height:inherit;
-    
 }
 
-#principal{
-    
+#main{
    flex: 8;
 }
+
 .logo{
     margin-top:5em;
     width:15em;
@@ -29,18 +29,16 @@ main{
 .filter{
     display: table;
     background: rgb(51,28,29);
-background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, rgba(32,29,29,1) 27%);
-    /* transition: 1s; */
+    background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, rgba(32,29,29,1) 27%);
     height: 15vh;
     width:100%;
     text-align: center;
     border-bottom: 1px red solid;
-    border-radius: 1em;
-    
+    border-radius: 1em;  
 }
+
 .filter:hover{
     background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, rgba(32,29,29,1) 79%);
-    
 }
 
 .filter-mid{
@@ -52,19 +50,10 @@ background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, r
     color: black;
     text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
 }
-/* #article{
-    width:2em;
-    height:2em;
-    padding: 0;
-    margin: 0;
-    margin-right: 10em;
-} */
 
-
-#titulo{
+#main-title{
     font-family: "Catamaran", sans-serif;
     text-shadow: 3px 0 0 rgb(180,74,58), 0 -3px 0 rgb(180,74,58), 0 3px 0 rgb(180,74,58), -3px 0 0 rgb(180,74,58);
-
     margin-top:5em;
     text-align: center;
 }
@@ -74,27 +63,19 @@ background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, r
     margin-left: 2em;
 }
 
-
-
-
-
-
 .card{
     position: relative;
     max-width: 15em;
     width: 20%;
     padding: 10px;
     margin: 10px;
-    /* background-color:rgb(75, 58, 82); */
     background-color: darkred;
     border: solid 1px;
     border-radius: 10%;
     margin-left: 5em;
-    /* box-shadow: 10px 10px 10px 10px; */
     transition: 0.5s;
     overflow: hidden;
 
-    
 }
 .card::before{
     content: "";
@@ -105,9 +86,9 @@ background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, r
     border-radius: 50%;
     transition: 0.5s;
     left: 40%;
-    top:20%;
-    
+    top:20%; 
 }
+
 .card:hover::before{
     transform: scale(12);
 }
@@ -115,9 +96,7 @@ background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, r
 .card:hover{
     box-shadow: 5px 5px 10px 5px white;
     margin-bottom: 10px;
-    /* transform: scale(1.1); */
     transform:scale(1.1);
-    /* background: black; */
 }
 
 .img-container{
@@ -142,17 +121,8 @@ background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, r
     top: 0;
     bottom: 0;
     margin: auto;
-    object-fit: contain;
-    /* width: 100%;  */
-    
-    
+    object-fit: contain;  
 }
-/* .image-jinx{
-    max-width: 100%;
-    border: solid 0.3em white;
-    border-radius: 1.5%;
-} */
-
 
 .card-information{
     position: relative;
@@ -168,15 +138,12 @@ background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, r
 .card-information .title{
     font-weight: bold;
     color: rgb(224, 209, 209);
-    /* z-index: 10; */
 }
 
 .card-information .price{
     text-align: right;
     font-weight: bold;
     color: rgb(224, 209, 209);
-    /* z-index: 10; */
-    /* border: solid 2px white; */
 }
 
 .description{
@@ -199,7 +166,8 @@ background: radial-gradient(circle, rgba(51,28,29,1) 0%, rgba(238,14,34,1) 0%, r
     font-weight: bold;
     background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
 }
-button:hover{/*pseudo clase, cuando le pongo el mouse encima pasa algo*/
+
+button:hover{
     color: rgb(207, 200, 200);
     background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
 }

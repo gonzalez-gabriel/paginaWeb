@@ -2,13 +2,13 @@
 main{
     display: block;
     background-image: url(images/fondoSa.jpg);
-    background-size: cover; /* CUBRE TODA LA PANTALLA (TODO EL VIEWPORT)*/
+    background-size: cover; 
     padding-top: 2em;
     padding-bottom: 2em;
     min-height: 85%;
     max-height: 100%;
 }
-.slave >h1{
+.main >h1{
     font-family: "Catamaran", sans-serif;
     text-shadow: 3px 0 0 rgb(180,74,58), 0 -3px 0 rgb(180,74,58), 0 3px 0 rgb(180,74,58), -3px 0 0 rgb(180,74,58);
     text-align: center;
@@ -32,7 +32,7 @@ main{
     letter-spacing:0.05em;
 }
 
-.catalogo1{
+.catalog1{
     font-weight: bold;
 }
 .banner{
@@ -47,12 +47,7 @@ main{
     
 }
 
-.slave{
-    /* position: absolute; */
-    /* right:0;
-    left:0;
-    bottom:0;
-    top:0; */
+.main{
     margin: auto;
     max-width: 48em;
 }
