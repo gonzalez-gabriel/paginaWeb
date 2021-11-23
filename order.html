@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="general.css" />
 		<link rel="stylesheet" href="order.css" />
 	</head>
+
 	<body>
 		<header>
 			<nav>
@@ -52,12 +53,17 @@
 					>
 						<div class="form-container">
 							<div>
-								<h2>Completa con tus datos para realizar el envío</h2>
+								<h2>
+									Completa con tus datos para realizar el
+									envío
+								</h2>
 								<h5>Lo campos con (*) son obligatorios</h5>
 							</div>
 							<div class="input-group">
 								<div>
-									<label for="last-name">Apellido <b>*</b></label>
+									<label for="last-name"
+										>Apellido <b>*</b></label
+									>
 								</div>
 								<div>
 									<input
@@ -70,7 +76,9 @@
 								</div>
 
 								<div>
-									<label for="first-name">Nombres<b>*</b></label>
+									<label for="first-name"
+										>Nombres<b>*</b></label
+									>
 								</div>
 								<div>
 									<input
@@ -83,7 +91,9 @@
 								</div>
 
 								<div>
-									<label for="address">Dirección<b>*</b></label>
+									<label for="address"
+										>Dirección<b>*</b></label
+									>
 								</div>
 								<div>
 									<input
@@ -96,7 +106,9 @@
 								</div>
 
 								<div>
-									<label for="province">Provincia<b>*</b></label>
+									<label for="province"
+										>Provincia<b>*</b></label
+									>
 								</div>
 								<div>
 									<input
@@ -147,7 +159,7 @@
 								</div>
 
 								<div>
-									<label for="phone">Phone<b>*</b></label>
+									<label for="phone">Teléfono<b>*</b></label>
 								</div>
 								<div>
 									<input
@@ -164,7 +176,6 @@
 								<input type="reset" value="Borrar" />
 								<input type="submit" value="Pedir" />
 							</div>
-							
 						</div>
 					</form>
 				</div>
@@ -183,19 +194,15 @@
 					, Tucumán, Argentina.
 				</p>
 				<div class="networks">
-					<a class="github" href="https://github.com/gonzalez-gabriel"
-						><img src="images/github.svg" alt=""
-					/></a>
-					<a
-						class="facebook"
-						href="https://www.facebook.com/global.learning.ar"
-						><img src="images/facebook.svg" alt=""
-					/></a>
-					<a
-						class="instagram"
-						href="https://www.instagram.com/globallearning.ar/?hl=es"
-						><img src="images/ig.svg" alt=""
-					/></a>
+					<a	class="github" href="https://github.com/gonzalez-gabriel">
+						<img src="images/github.svg" alt=""/>
+					</a>
+					<a	class="facebook" href="https://www.facebook.com/global.learning.ar"	>
+						<img src="images/facebook.svg" alt=""/>
+					</a>
+					<a	class="instagram" href="https://www.instagram.com/globallearning.ar/?hl=es"
+						><img src="images/ig.svg" alt=""/>
+					</a>
 				</div>
 			</div>
 		</footer>
@@ -204,7 +211,7 @@
 		window.addEventListener("DOMContentLoaded", () => {
 			const order = localStorage.getItem("order");
 			if (order) {
-				const catalogOrder = JSON.parse(order); 
+				const catalogOrder = JSON.parse(order);
 				const orderSelected = document.querySelector(".order-selected");
 				orderSelected.querySelector(".title").innerText =
 					catalogOrder.title;
